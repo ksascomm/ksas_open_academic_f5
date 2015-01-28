@@ -84,7 +84,7 @@
 				'menu_class' => 'nav-bar',
 				'container' => 'nav',
 				'container_id' => 'main_nav',
-				'container_class' => 'twelve columns',
+				'container_class' => 'small-12 columns',
 				'fallback_cb' => 'foundation_page_menu',
 				'walker' => new foundation_navigation(),
 				'depth' => 3  )); ?>

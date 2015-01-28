@@ -1,0 +1,143 @@
+/******* Fonts ************/
+@font-face {
+  font-family: 'flagship-icon';
+  src: url('../fonts/flagship-icon.eot');
+}
+
+@font-face {
+  font-family: 'flagship-icon';
+  src:url('../fonts/flagship-icon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/flagship-icon.svg#flagship-icon') format('svg'),
+    url('../fonts/flagship-icon.woff') format('woff'),
+    url('../fonts/flagship-icon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Myriad W01 Regular",Arial,sans-serif;
+  background: #e2e1df;
+}
+
+h1, h2, h3, h4, h5, h6, .semibold {
+  font-family: "Myriad W01 SmBd",Arial,sans-serif;
+  color: #181818;
+  font-weight: 400;
+}
+
+table {
+  thead tr th, tfoot tr td {
+    font-family: "Myriad W01 SmBd",Arial,sans-serif;
+    color: #181818;
+    font-weight: 400;
+  }
+}
+
+em, i {
+  font-family: "Myriad W01 It";
+  font-style: normal;
+}
+
+blockquote {
+  font-family: "Myriad W01 It";
+  font-style: normal;
+  p {
+    font-family: "Myriad W01 It";
+    font-style: normal;
+  }
+}
+
+.italic {
+  font-family: "Myriad W01 It";
+  font-style: normal;
+}
+
+strong, b, .bold {
+  font-family: "Myriad W01 Bd";
+  font-weight: 400;
+}
+
+.b.em, .strong.em {
+  font-family: "Myriad W01 It";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.iconfont {
+  font-family: 'flagship-icon';
+}
+
+.copy h2 {
+  color: #369;
+}
+
+.acc_expandall {
+  font-size: 50%;
+}
+
+p {
+  line-height: 1.3em;
+  color: #333;
+}
+
+.content {
+  p {
+    line-height: 1.6em;
+  }
+  img {
+    border: solid #f1f1f1 5px;
+    -webkit-box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+    box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+    margin-right: 10px;
+  }
+}
+
+#widget img {
+  border: solid #f1f1f1 5px;
+  -webkit-box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+  box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
+  margin-right: 10px;
+  border: solid #f1f1f1 2px;
+}
+
+.carousel img {
+  border: solid #f1f1f1 2px;
+}
+
+h6, time {
+  font-size: 10px;
+  color: #666;
+  font-family: "Myriad W01 Bd";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+}
+
+.small {
+  font-size: 40%;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-bottom: 14px;
+}
+
+.divider, hr {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 1.6em;
+  border-bottom: ridge 5px #fafafa;
+}
+
+.tabs.pill {
+  dd, li {
+    margin-bottom: 7px;
+  }
+}

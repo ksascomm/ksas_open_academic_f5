@@ -1,0 +1,266 @@
+/**************CALENDAR****************/
+
+.SEClear {
+  float: left;
+}
+
+#SECalendarListWrapper {
+  max-width: 300px;
+  table {
+    border: none;
+    margin: 0;
+    background: transparent;
+    tbody tr {
+      &.even, &:nth-child(even) {
+        background: none;
+      }
+    }
+    thead tr th, tfoot tr th, tbody tr td, tr td, tfoot tr td {
+      display: block;
+    }
+  }
+  .SECalendarEventLocation:before {
+    content: 'Location: ';
+    color: #633;
+  }
+  .SECalendarEventTime:before {
+    content: 'Time: ';
+    color: #633;
+  }
+  .SECalendarEventLocation, .SECalendarNoEvent {
+    margin-bottom: 20px;
+  }
+  table tbody tr td {
+    padding: 0 10px 4px;
+  }
+  .SECalendarEventDate {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Myriad W01 Bd";
+  }
+  .SECalendarEventTime, .SECalendarEventLocation {
+    color: #333;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Myriad W01 Regular",Arial,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .SECalendarEventName, .SECalendarNoEvent, .SECalendarEventName a {
+    color: #00337f;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Myriad W01 Regular",Arial,sans-serif;
+  }
+  .SECalendarThumb {
+    display: none;
+  }
+}
+
+.SECalendarEventName h3 {
+  font-family: "Myriad W01 Bd";
+  font-size: 18px;
+}
+
+.SECalendarEventDetails {
+  border-color: transparent;
+  padding: 5px 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  .SECalendarProperty {
+    margin-bottom: 8px;
+  }
+}
+
+#SECalendarListWrapper .SECalendarPropertyLabel {
+  font-family: "Myriad W01 Bd";
+  float: left;
+  margin-right: 10px;
+}
+
+.SEbuttons {
+  padding-top: 10px;
+}
+
+.SECalendarEventDetails p {
+  margin-bottom: 0;
+}
+
+#SECalendarWrapper {
+  width: 100%;
+  table {
+    width: 100%;
+  }
+}
+
+#SECalendarTable td {
+  border: 1px solid #ddd;
+}
+
+#SECalendarNav {
+  margin: 10px auto 20px;
+  div {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+
+a.rssLink {
+  display: none;
+}
+
+#SECalendarSearch {
+  .SECalendarLocation, .SECalendarKeyword input.SEApplicationText, .SECalendarType label, .SECalendarKeyword label {
+    display: none;
+  }
+}
+
+#SECalendarNav .SECalendarMonth {
+  font-family: "Myriad W01 SmBd",Arial,sans-serif;
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+#SECalendar {
+  padding-bottom: 50px;
+  .SECalendarEventName a, .SECalendarEventTime {
+    color: #FFF;
+  }
+}
+
+#SECalendarSearch {
+  margin-top: 10px;
+}
+
+.SECalendarMonth {
+  font-size: 18px;
+  text-align: center;
+}
+
+.SECalendarDay a {
+  color: #000;
+}
+
+/******** WP-Calendar******/
+/* 14.0 Calendar
+___________________________________________________________*/
+
+.category-80 .fc-event-skin, .fc-event-skin.category-80 {
+  /* Theory Events */
+  background-color: #679bcd;
+  border-color: #679bcd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.category-84 .fc-event-skin, .fc-event-skin.category-84 {
+  /* Micro Events */
+  background-color: #95a739;
+  border-color: #95a739;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.category-83 .fc-event-skin, .fc-event-skin.category-83 {
+  /* Macro Events */
+  background-color: #c4a41d;
+  border-color: #c4a41d;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.category-82 .fc-event-skin, .fc-event-skin.category-82 {
+  /* Lunch Seminar Events */
+  background-color: #c4691d;
+  border-color: #c4691d;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.category-81 .fc-event-skin, .fc-event-skin.category-81 {
+  /* Academic */
+  background-color: #a64938;
+  border-color: #a64938;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.category-1212 .fc-event-skin, .fc-event-skin.category-1212 {
+  /* Job Market */
+  background-color: #606060;
+  border-color: #606060;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.macro {
+  background-color: #c4a41d;
+  color: #FFFFFF;
+}
+
+.micro {
+  background-color: #95a739;
+  color: #FFFFFF;
+}
+
+.theory {
+  background-color: #679bcd;
+  color: #FFFFFF;
+}
+
+.lunch {
+  background-color: #c4691d;
+  color: #FFFFFF;
+}
+
+.academic {
+  background-color: #a64938;
+  color: #FFFFFF;
+}
+
+.other {
+  background-color: #3366cc;
+  color: #FFFFFF;
+}
+
+.job-market {
+  background-color: #606060;
+  color: #FFFFFF;
+}
+
+h2.fc-header-title {
+  font-size: 1.3em;
+  /* 26px */
+  line-height: 1em;
+  margin: 0 0 1em;
+  text-transform: uppercase;
+}
+
+table.fc-header {
+  margin-bottom: 0;
+}
+
+.fc table {
+  background: none;
+}
+
+.fc-grid .fc-event-time {
+  display: block;
+}
+
+.fc-event-time, .fc-event-title {
+  font-size: 85%;
+  padding: 2px;
+}
+
+a.button:hover {
+  color: #333;
+}

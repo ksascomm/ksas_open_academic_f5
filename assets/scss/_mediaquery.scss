@@ -1,0 +1,148 @@
+@media only screen and (max-width: 1024px) {
+  #search-bar input[type="submit"], #field_search input[type="submit"] {
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  #main_nav ul li {
+    padding: 0 7px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #logo_nav {
+    margin-top: 50px;
+  }
+  .sidebar_bg, .homepage_bg {
+    background: #cecece!important;
+  }
+  #main_nav ul {
+    li {
+      &:nth-child(5) {
+        clear: left;
+      }
+      width: 33%;
+      ul {
+        display: none;
+      }
+    }
+    height: 144px;
+  }
+  li.logo {
+    display: none;
+  }
+  .offset-top {
+    margin-top: 0!important;
+  }
+  #caption {
+    display: none;
+  }
+  .single-people .tabs {
+    dd a, li a {
+      padding: 18px 20px;
+    }
+  }
+  .tabs {
+    &.mobile {
+      dd:first-child, li:first-child {
+        padding-left: 0 !important;
+      }
+    }
+    dd.active a {
+      background: #F7F7F7;
+    }
+  }
+  .content {
+    padding-right: 0;
+  }
+  #fields_search input {
+    &[type="submit"], &[type="text"] {
+      border-radius: 0 !important;
+      -webkit-appearance: none;
+    }
+  }
+  #search-bar input[type="submit"] {
+    border-radius: 0 !important;
+    -webkit-appearance: none;
+  }
+  li.person {
+    margin-left: 0 !important;
+    padding-left: 0;
+  }
+  .fc-view {
+    overflow: visible !important;
+  }
+  .button.inline {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #main_nav ul li {
+    padding: 0 5px;
+    width: auto;
+  }
+  .mobile-field {
+    clear: left;
+  }
+  body.fields .row .mobile-two {
+    width: 100%!important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  button {
+    font-size: 14px;
+  }
+  .hide-for-mobile {
+    display: none!important;
+  }
+  #quicklinks li.has-flyout {
+    width: 100%;
+  }
+  #logo_nav {
+    margin-top: 0;
+  }
+}
+
+@media print {
+  ul.accordion .content {
+    display: block!important;
+  }
+  .hide-for-print {
+    display: none!important;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .faculty {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .faculty {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  #desktop-nav {
+    display: none;
+  }
+  .mobile-logo {
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  #mobile-nav {
+    display: none;
+  }
+}
