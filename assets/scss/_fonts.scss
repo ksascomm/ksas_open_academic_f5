@@ -1,68 +1,65 @@
 /******* Fonts ************/
-@font-face {
-  font-family: 'flagship-icon';
-  src: url('../fonts/flagship-icon.eot');
-}
-
-@font-face {
-  font-family: 'flagship-icon';
-  src:url('../fonts/flagship-icon.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/flagship-icon.svg#flagship-icon') format('svg'),
-    url('../fonts/flagship-icon.woff') format('woff'),
-    url('../fonts/flagship-icon.ttf') format('truetype');
-  font-weight: normal;
+body {
+  font-family: $font-stack;
+  background: #e2e1df;
+  font-weight: 400;
   font-style: normal;
 }
 
-body {
-  font-family: "Myriad W01 Regular",Arial,sans-serif;
-  background: #e2e1df;
+h1, h2, h3 {
+  font-family: $font-header;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6, .semibold {
-  font-family: "Myriad W01 SmBd",Arial,sans-serif;
-  color: #181818;
-  font-weight: 400;
+h4, h5, h6, .semibold {
+  font-family: $font-stack;
+  font-weight: 600;
+  font-style: normal;
 }
 
 table {
   thead tr th, tfoot tr td {
-    font-family: "Myriad W01 SmBd",Arial,sans-serif;
-    color: #181818;
+    font-family: $font-header;
     font-weight: 400;
-  }
-}
-
-em, i {
-  font-family: "Myriad W01 It";
-  font-style: normal;
-}
-
-blockquote {
-  font-family: "Myriad W01 It";
-  font-style: normal;
-  p {
-    font-family: "Myriad W01 It";
     font-style: normal;
   }
 }
 
-.italic {
-  font-family: "Myriad W01 It";
-  font-style: normal;
+em, i {
+  font-family: $font-stack;
+   font-weight: 400;
+  font-style: italic;
+}
+
+blockquote {
+ font-family: $font-stack;
+   font-weight: 400;
+  font-style: italic;
+  p {
+    font-family: $font-stack;
+   font-weight: 400;
+  font-style: italic;
+  }
+}
+
+italic {
+  font-family: $font-stack;
+   font-weight: 400;
+  font-style: italic;
 }
 
 strong, b, .bold {
-  font-family: "Myriad W01 Bd";
-  font-weight: 400;
-}
-
-.b.em, .strong.em {
-  font-family: "Myriad W01 It";
+  font-family: $font-stack;
   font-weight: 700;
   font-style: normal;
 }
 
+.b.em, .strong.em {
+  font-family: $font-stack;
+   font-weight: 400;
+  font-style: italic;
+}
 .uppercase {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -82,7 +79,7 @@ strong, b, .bold {
 
 p {
   line-height: 1.3em;
-  color: #333;
+  color: #2c2c33;
 }
 
 .content {

@@ -13,7 +13,7 @@
     background-color: #efefef;
     color: #222222;
     padding: 0.88889rem 1.65rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    font-family: $font-stack !important;
     font-size: 0.88889rem;
   }
 }
@@ -65,7 +65,7 @@ dd.active {
 }
 
 .black_bg {
-  background: #333;
+  background: #2c2c33;
 }
 
 .white {
@@ -89,18 +89,18 @@ dd.active {
 }
 
 .blue_bg {
-  background: #6ca3d7;
+  background: $sky;
 }
 
 #SECalendar .SECalendarEventDetails {
-  background: #6ca3d7;
+  background: $sky;
   &.color1 {
-    background: #6ca3d7;
+    background: $sky;
   }
 }
 
 .color1, .blueslide {
-  background: #6ca3d7;
+  background: $sky;
 }
 
 .dark_blue_bg, #SECalendar .SECalendarEventDetails.color8, .color8 {
@@ -370,10 +370,10 @@ ul {
 }
 
 .callout.panel {
-  color: #333;
+  color: #2c2c33;
   background: #fc6;
   a li, li a {
-    color: #333;
+    color: #2c2c33;
   }
   p, ul {
     font-family: "Myriad W01 SmBd",Arial,sans-serif;
@@ -509,7 +509,7 @@ button {
     margin-right: 0;
     text-transform: capitalize;
     a {
-      color: #333;
+      color: #2c2c33;
       padding: 5px;
       &.selected, &:hover {
         -webkit-border-radius: 5px;

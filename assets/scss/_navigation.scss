@@ -185,7 +185,7 @@ nav ul {
 
 #main_nav ul {
   .flyout {
-    background: #679bcd;
+    background: $sky;
     padding: 0;
     margin: 0;
     border: 1px solid #38638e;
@@ -250,7 +250,7 @@ ul.flyout li, .nav-bar li ul li {
 }
 
 ul.flyout li a, .nav-bar li ul li a {
-  background: #679bcd;
+  background: $sky;
   border: 1px solid #38638e;
   border-width: 1px 1px 0 0;
   color: #FFF;
@@ -265,9 +265,9 @@ ul.flyout li a, .nav-bar li ul li a {
 }
 
 ul.flyout li a:hover, .nav-bar li ul li a:hover {
-  background: #333;
+  background: #2c2c33;
   background: rgba(255, 255, 255, 0.1);
-  color: #333;
+  color: #2c2c33;
 }
 
 ul.flyout li.active, .nav-bar li ul li.active {
@@ -292,7 +292,7 @@ ul.flyout li.active a, .nav-bar li ul li.active a {
 #main_nav ul li {
   &:hover ul, a:hover ul, &.current_page_ancestor ul, &.current_page_item ul {
     visibility: visible;
-    background: #679bcd;
+    background: $sky;
     width: 300px;
     min-height: auto;
     -webkit-border-radius: 0;
@@ -342,7 +342,7 @@ li.external a::after {
 
 ul {
   &.nav li.external a::after {
-    color: #333;
+    color: #2c2c33;
   }
   &.breadcrumbs {
     background: none;

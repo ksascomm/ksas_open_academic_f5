@@ -40,7 +40,7 @@
     font-family: "Myriad W01 Bd";
   }
   .SECalendarEventTime, .SECalendarEventLocation {
-    color: #333;
+    color: #2c2c33;
     font-size: 10px;
     font-weight: 400;
     font-family: "Myriad W01 Regular",Arial,sans-serif;
@@ -149,8 +149,8 @@ ___________________________________________________________*/
 
 .category-80 .fc-event-skin, .fc-event-skin.category-80 {
   /* Theory Events */
-  background-color: #679bcd;
-  border-color: #679bcd;
+  background-color: $sky;
+  border-color: $sky;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -212,7 +212,7 @@ ___________________________________________________________*/
 }
 
 .theory {
-  background-color: #679bcd;
+  background-color: $sky;
   color: #FFFFFF;
 }
 
@@ -262,5 +262,5 @@ table.fc-header {
 }
 
 a.button:hover {
-  color: #333;
+  color: #2c2c33;
 }
