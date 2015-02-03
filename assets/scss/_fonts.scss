@@ -13,10 +13,16 @@ h1, h2, h3 {
 }
 
 h4, h5, h6, .semibold {
-  font-family: $font-stack;
+  font-family: $font-semibold;
   font-weight: 600;
   font-style: normal;
 }
+
+h5.white {
+   font-family: $font-stack;
+   font-weight: 400;
+}
+
 
 table {
   thead tr th, tfoot tr td {
@@ -50,8 +56,8 @@ italic {
 }
 
 strong, b, .bold {
-  font-family: $font-stack;
-  font-weight: 700;
+  font-family: $font-semibold;
+  font-weight: 600;
   font-style: normal;
 }
 

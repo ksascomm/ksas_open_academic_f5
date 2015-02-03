@@ -23,8 +23,6 @@
   src: url('../fonts/quadon/Quadon-Medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/quadon/Quadon-Medium.woff') format('woff'),
        url('../fonts/quadon/Quadon-Medium.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
@@ -33,38 +31,14 @@
   src: url('../fonts/gentona/Gentona-Book.eot?#iefix') format('embedded-opentype'),
        url('../fonts/gentona/Gentona-Book.woff') format('woff'),
        url('../fonts/gentona/Gentona-Book.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'gentona';
-  src: url('../fonts/gentona/Gentona-BookItalic.eot');
-  src: url('../fonts/gentona/Gentona-BookItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/gentona/Gentona-BookItalic.woff') format('woff'),
-       url('../fonts/gentona/Gentona-BookItalic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'gentona';
+  font-family: 'gentona-semibold';
   src: url('../fonts/gentona/Gentona-SemiBold.eot');
   src: url('../fonts/gentona/Gentona-SemiBold.eot?#iefix') format('embedded-opentype'),
        url('../fonts/gentona/Gentona-SemiBold.woff') format('woff'),
        url('../fonts/gentona/Gentona-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'gentona';
-  src: url('../fonts/gentona/Gentona-Bold.eot');
-  src: url('../fonts/gentona/Gentona-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/gentona/Gentona-Bold.woff') format('woff'),
-       url('../fonts/gentona/Gentona-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
 }
 
 
