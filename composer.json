@@ -2,7 +2,7 @@
     "name": "ksascomm/ksas_open_academic_f5",
     "type": "wordpress-theme",
     "license": "GPL2",
-  	"description": "Child theme of KSAS Flagship Academic, includes Exhibits section",
+  	"description": "For academic departments",
   	"homepage": "http://github.com/ksascomm/ksas_open_academic_f5",
   	"authors": [
       {
