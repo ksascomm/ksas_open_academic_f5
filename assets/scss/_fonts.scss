@@ -2,7 +2,7 @@
 body {
   font-family: $font-stack;
   background: #e2e1df;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -14,15 +14,14 @@ h1, h2, h3 {
 
 h4, h5, h6, .semibold {
   font-family: $font-semibold;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 h5.white {
    font-family: $font-stack;
-   font-weight: 400;
+  font-size: 1.3rem;
 }
-
 
 table {
   thead tr th, tfoot tr td {
@@ -34,36 +33,36 @@ table {
 
 em, i {
   font-family: $font-stack;
-   font-weight: 400;
+   font-weight: 300;
   font-style: italic;
 }
 
 blockquote {
  font-family: $font-stack;
-   font-weight: 400;
+   font-weight: 300;
   font-style: italic;
   p {
     font-family: $font-stack;
-   font-weight: 400;
+   font-weight: 300;
   font-style: italic;
   }
 }
 
 italic {
   font-family: $font-stack;
-   font-weight: 400;
+   font-weight: 300;
   font-style: italic;
 }
 
 strong, b, .bold {
   font-family: $font-semibold;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 .b.em, .strong.em {
   font-family: $font-stack;
-   font-weight: 400;
+   font-weight: 300;
   font-style: italic;
 }
 .uppercase {
