@@ -6,7 +6,7 @@ Template Name: Courses - Undergraduate
 
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-<div class="large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
+<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
 		<section class="content">
  			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> <!--Start the loop -->

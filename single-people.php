@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-	<div class="large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
+	<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<section class="content">
 			<?php 
 				if (has_term('', 'role') && !has_term('job-market-candidate', 'role')) {

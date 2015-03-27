@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-	<div class="large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
+	<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<section class="content">
 		<?php if(is_tax('bbtype', 'udergrad-bb')){ ?>
 		<h2>Undergraduate Bulletin Board</h2>

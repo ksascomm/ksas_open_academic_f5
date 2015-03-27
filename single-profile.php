@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-	<div class="large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
+	<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<section class="content news">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h2><?php the_title(); ?></h2>
