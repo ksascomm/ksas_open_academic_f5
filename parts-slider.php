@@ -11,14 +11,7 @@
 <div class="row">
 <div class="slideshow-wrapper">
   <div class="preloader"></div>
-<ul id="slider" data-orbit data-options="animation:fade;
- slide_number: false;
-timer:true;
-next_on_click: true;
-                  pause_on_hover:false;
-                  animation_speed:500;
-                  navigation_arrows:false;
-                  bullets:false;">
+<ul id="slider" data-orbit data-options="animation:fade; slide_number: false; timer:true; next_on_click: true;pause_on_hover:false; animation_speed:500; navigation_arrows:false; bullets:false;">
 <?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 <li>
 	<img src="<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>" class="no-gutter" />
