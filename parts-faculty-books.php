@@ -24,6 +24,7 @@
 		<div class="book-entry">
 			<a href="<?php the_permalink(); ?>">
 	    		<?php if ( has_post_thumbnail()) {  the_post_thumbnail('directory', array('class'	=> "floatleft"));  } ?>
+
 				<h5><?php the_title();?></h5>
 				<h6><?php if ( get_post_meta($post->ID, 'ecpt_pub_date', true) ) : echo get_post_meta($post->ID, 'ecpt_pub_date', true);  endif; ?><?php if ( get_post_meta($post->ID, 'ecpt_publisher', true) ) :?>, <?php echo get_post_meta($post->ID, 'ecpt_publisher', true);  endif; ?></h6>
 				<p><strong>Role:&nbsp;<span style="text-transform:capitalize;"><?php echo get_post_meta($post->ID, 'ecpt_pub_role', true); ?></span>
@@ -31,7 +32,7 @@
 				   <?php echo get_the_title($faculty_post_id2); ?>,&nbsp;<?php echo get_post_meta($post->ID, 'ecpt_pub_role2', true); ?>
 				<?php } ?>
 				</strong></p>
-			</a>
+			</a>		
 		</div>
 	<?php endwhile; endif;  wp_reset_query(); ?>
 </li>
