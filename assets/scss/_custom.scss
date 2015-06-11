@@ -25,6 +25,12 @@ dd.active {
 
 /******* Reusable Classes ************/
 
+a.white {
+  &:hover, &:visited {
+    color: #fff;
+  }
+}
+
 .wrapper {
   padding: 30px;
   margin-top: 0px;
