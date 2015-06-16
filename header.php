@@ -44,7 +44,7 @@
 		<div class="row hide-for-print">
 			<div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
 				<div class="row">
-					<div class="small-6 columns">
+					<div class="small-5 columns">
 					<?php $theme_option = flagship_sub_get_global_options();
 							$collection_name = $theme_option['flagship_sub_search_collection'];
 					?>
@@ -61,7 +61,7 @@
 							'fallback_cb' => 'foundation_page_menu',
 							'container' => 'div',
 							'container_id' => 'search_links',
-							'container_class' => 'small-6 columns links inline hide-for-mobile',
+							'container_class' => 'small-7 columns links inline hide-for-mobile',
 							'depth' => 1,
 							'items_wrap' => '%3$s', )); ?>
 				</div>
