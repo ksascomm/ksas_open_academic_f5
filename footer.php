@@ -26,7 +26,7 @@
 				'menu_class' => 'inline-list hide-for-small', 
 				'fallback_cb' => 'foundation_page_menu', 
 				'container' => 'nav', 
-				'container_class' => 'medium-7 columns', 
+				'container_class' => 'medium-5 columns', 
 				'walker' => new foundation_navigation() ) ); 
 		 ?>
 		<!-- Social Media -->
