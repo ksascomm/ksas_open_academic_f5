@@ -266,9 +266,9 @@ ul.flyout li a, .nav-bar li ul li a {
 }
 
 ul.flyout li a:hover, .nav-bar li ul li a:hover {
-  background: #2c2c33;
+  background: $black;
   background: rgba(255, 255, 255, 0.1);
-  color: #2c2c33;
+  color: $black;
 }
 
 ul.flyout li.active, .nav-bar li ul li.active {
@@ -343,7 +343,7 @@ li.external a::after {
 
 ul {
   &.nav li.external a::after {
-    color: #2c2c33;
+    color: $black;
   }
   &.breadcrumbs {
     background: none;
@@ -352,14 +352,5 @@ ul {
     a {
       color: #666;
     }
-  }
-}
-
-#search-bar {
-  .columns {
-    padding: 0;
-  }
-  .links {
-    margin-top: inherit;
   }
 }

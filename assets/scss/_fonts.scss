@@ -20,7 +20,7 @@ h4, h5, h6, .semibold {
 
 h5.white {
    font-family: $font-stack;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 table {
@@ -84,7 +84,7 @@ strong, b, .bold {
 
 p {
   line-height: 1.3em;
-  color: #2c2c33;
+  color: $black;
 }
 
 .content {
@@ -116,7 +116,8 @@ p {
 h6, time {
   font-size: 10px;
   color: #666;
-  font-family: "Myriad W01 Bd";
+  font-family: $font-subhead;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 3px;

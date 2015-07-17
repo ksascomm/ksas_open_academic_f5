@@ -1,6 +1,4 @@
-/**************CALENDAR****************/
-
-.SEClear {
+SEClear {
   float: left;
 }
 
@@ -21,37 +19,40 @@
   }
   .SECalendarEventLocation:before {
     content: 'Location: ';
-    color: #633;
+    color: $rust;
   }
   .SECalendarEventTime:before {
     content: 'Time: ';
-    color: #633;
+    color: $rust;
   }
   .SECalendarEventLocation, .SECalendarNoEvent {
     margin-bottom: 20px;
   }
   table tbody tr td {
-    padding: 0 10px 4px;
+    padding: 0 10px 4px 10px;
   }
   .SECalendarEventDate {
     color: #000;
     font-size: 20px;
     margin-bottom: 10px;
-    font-family: "Myriad W01 Bd";
+    font-family: $font-subhead;
+
   }
   .SECalendarEventTime, .SECalendarEventLocation {
-    color: #2c2c33;
+    color: #333;
     font-size: 10px;
-    font-weight: 400;
-    font-family: "Myriad W01 Regular",Arial,sans-serif;
+    font-family: $font-stack;
+    font-weight: 300;
+    font-style: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
   .SECalendarEventName, .SECalendarNoEvent, .SECalendarEventName a {
-    color: #00337f;
+    color: #3478b6;
     font-size: 14px;
-    font-weight: 400;
-    font-family: "Myriad W01 Regular",Arial,sans-serif;
+    font-family: $font-stack;
+    font-weight: 300;
+    font-style: normal;
   }
   .SECalendarThumb {
     display: none;
@@ -59,7 +60,9 @@
 }
 
 .SECalendarEventName h3 {
-  font-family: "Myriad W01 Bd";
+  font-family: $font-subhead;
+  font-weight: 400;
+  font-style: normal;
   font-size: 18px;
 }
 
@@ -75,7 +78,9 @@
 }
 
 #SECalendarListWrapper .SECalendarPropertyLabel {
-  font-family: "Myriad W01 Bd";
+  font-family: $font-subhead;
+  font-weight: 400;
+  font-style: normal;
   float: left;
   margin-right: 10px;
 }
@@ -95,12 +100,8 @@
   }
 }
 
-#SECalendarTable td {
-  border: 1px solid #ddd;
-}
-
 #SECalendarNav {
-  margin: 10px auto 20px;
+  margin: 10px auto 20px auto;
   div {
     display: inline;
     vertical-align: middle;
@@ -118,7 +119,7 @@ a.rssLink {
 }
 
 #SECalendarNav .SECalendarMonth {
-  font-family: "Myriad W01 SmBd",Arial,sans-serif;
+  font-family: $font-header;
   font-size: 28px;
   margin-top: 5px;
 }
@@ -142,6 +143,28 @@ a.rssLink {
 .SECalendarDay a {
   color: #000;
 }
+
+#calendar_container iframe {
+  height: 785px!important;
+}
+
+#SECalendarTable td {
+  border: 1px solid #ddd;
+  width: 14.28%;
+  height: 138px;
+}
+
+.SECalendarPrevMonth a, .SECalendarNextMonth a {
+  color: #fff;
+}
+
+#SECalendar .SECalendarEventDetails {
+  background: #3478b6 !important;
+  &.color1 {
+    background: #3478b6 !important;
+  }
+}
+
 
 /******** WP-Calendar******/
 /* 14.0 Calendar
@@ -262,5 +285,5 @@ table.fc-header {
 }
 
 a.button:hover {
-  color: #2c2c33;
+  color: $black;
 }

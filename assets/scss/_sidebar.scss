@@ -83,8 +83,10 @@ ul.nav {
 }
 
 .sidebar_bg ul.nav li a, #sidebar li a {
-  font-family: "Myriad W01 SmBd",Arial,sans-serif;
-  color: #369;
+  font-family: $font-subhead;
+  font-weight: 400;
+  font-style: normal;
+  color: #336699;
 }
 
 #widget {
@@ -92,7 +94,7 @@ ul.nav {
     margin: 0 20px 40px;
   }
   a p {
-    color: #2c2c33;
+    color: $black;
   }
 }
 

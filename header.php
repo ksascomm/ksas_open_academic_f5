@@ -33,55 +33,85 @@
 
 <body <?php body_class(); ?>>
 	<header class="black_bg">
-		<div class="row show-for-small">
-			<div class="medium-4 columns centered black_bg">
-			<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>">Home</a></div>
-			<h2 align="center"><a class="white" href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></h2>
-			</div>
-		</div>
-
-		<div class="row hide-for-print">
-			<div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
-				<div class="row">
-					<div class="small-5 columns">
-					<?php $theme_option = flagship_sub_get_global_options();
-							$collection_name = $theme_option['flagship_sub_search_collection'];
-					?>
-
-					<form method="GET" action="<?php echo site_url('/search'); ?>">
-						<input type="submit" class="icon-search" value="&#xe004;" />
-						<input type="text" name="q" placeholder="Search this site" />
-						<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
-					</form>
-					</div>
-						<?php wp_nav_menu( array(
-							'theme_location' => 'search_bar',
-							'menu_class' => '',
-							'fallback_cb' => 'foundation_page_menu',
-							'container' => 'div',
-							'container_id' => 'search_links',
-							'container_class' => 'small-7 columns links inline hide-for-mobile',
-							'depth' => 1,
-							'items_wrap' => '%3$s', )); ?>
+ 		<div id="mobile-nav">
+			<div class="row">
+				<div class="small-12 large-4 columns centered">
+				<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
+				<h2 align="center"><a class="white" href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></h2>
 				</div>
-			</div>	<!-- End #search-bar	 -->
-		</div>
-		<div class="row">
-			<div class="small-12 columns hide-for-small" id="logo_nav">
-				<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
-				<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
+			</div>
+			<div class="row hide-for-print">
+					<div id="search-bar" class="small-12 columns">
+						
+							<div class="small-6 columns">
+							<?php $theme_option = flagship_sub_get_global_options();
+									$collection_name = $theme_option['flagship_sub_search_collection'];
+							?>
+
+							<form method="GET" action="<?php echo site_url('/search'); ?>">
+								<input type="submit" class="icon-search" value="&#xe004;" />
+								<input type="text" name="q" placeholder="Search this site" />
+								<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
+							</form>
+							</div>
+								<?php wp_nav_menu( array(
+									'theme_location' => 'search_bar',
+									'menu_class' => '',
+									'fallback_cb' => 'foundation_page_menu',
+									'container' => 'div',
+									'container_id' => 'search_links',
+									'container_class' => 'small-6 columns links inline',
+									'depth' => 1,
+									'items_wrap' => '%3$s', )); ?>
+						
+					</div>	<!-- End #search-bar	 -->
 			</div>
 		</div>
-		<div class="row hide-for-print">
-			<?php wp_nav_menu( array(
-				'theme_location' => 'main_nav',
-				'menu_class' => 'nav-bar',
-				'container' => 'nav',
-				'container_id' => 'main_nav',
-				'container_class' => 'small-12 columns',
-				'fallback_cb' => 'foundation_page_menu',
-				'walker' => new foundation_navigation(),
-				'depth' => 3  )); ?>
+
+		<div id="desktop-nav">
+			<div class="row hide-for-print">
+				<div id="search-bar" class="small-12 large-5 large-offset-7 columns">
+					<div class="row">
+						<div class="small-6 columns">
+						<?php $theme_option = flagship_sub_get_global_options(); 
+								$collection_name = $theme_option['flagship_sub_search_collection'];
+						?>
+
+						<form method="GET" action="<?php echo site_url('/search'); ?>">
+							<input type="submit" class="icon-search" value="&#xe004;" />
+							<input type="text" name="q" placeholder="Search this site" />
+							<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
+						</form>
+						</div>
+							<?php wp_nav_menu( array( 
+								'theme_location' => 'search_bar', 
+								'menu_class' => '', 
+								'fallback_cb' => 'foundation_page_menu', 
+								'container' => 'div',
+								'container_id' => 'search_links', 
+								'container_class' => 'small-6 columns links inline',
+								'depth' => 1,
+								'items_wrap' => '%3$s', )); ?> 
+					</div>	
+				</div>	<!-- End #search-bar	 -->
+			</div>
+			<div class="row">
+				<div class="small-12 columns" id="logo_nav">
+					<li class="logo"><a href="http://krieger.jhu.edu" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
+			<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
+				</div>
+			</div>
+			<div class="row hide-for-print">
+				<?php wp_nav_menu( array(
+					'theme_location' => 'main_nav',
+					'menu_class' => 'nav-bar',
+					'container' => 'nav',
+					'container_id' => 'main_nav',
+					'container_class' => 'small-12 columns',
+					'fallback_cb' => 'foundation_page_menu',
+					'walker' => new foundation_navigation(),
+					'depth' => 3  )); ?>
+			</div>
 		</div>
 		</header>
 		<div id="nav-break"></div>

@@ -26,12 +26,14 @@
       width: 80%;
       background: #666;
       color: #ccc;
-      font-family: "Myriad W01 It";
+      font-family: $font-stack;
+      font-weight: 300;
+      font-style: italic;
       font-size: 16px;
       border: none;
     }
     &[type="submit"] {
-      background: #2c2c33;
+      background: $black;
       height: 40px;
       width: 45px;
       font-family: 'flagship-icon';
@@ -148,16 +150,17 @@ li.person {
   .list-paper a {
     font-size: 14px;
     color: #000;
-    font-family: "Myriad W01 SmBd",Arial,sans-serif;
+    font-family: $font-header; font-weight: 400; font-style: normal;
     &:link {
       font-size: 14px;
       color: #000;
-      font-family: "Myriad W01 SmBd",Arial,sans-serif;
+     font-family: $font-header; font-weight: 400; font-style: normal;
     }
   }
   .conference {
     font-size: 12px;
-    font-family: "Myriad W01 Regular",Arial,sans-serif;
+    font-family: $font-stack;
+    font-weight: 300;
   }
   .list-conference a {
     &:link, &:visited {

@@ -47,13 +47,18 @@ div.orbit-wrapper div.timer {
   display: none;
 }
 
-#caption {
+/*#caption {
   &.vertical {
-    position: absolute;
-    top: inherit;
+    min-height: 425px;
+    position: relative;
     bottom: 0;
-    min-height: 375px;
-    z-index: 2;
+    margin-left: 4px;
+       .middle {
+          position: absolute;           
+          top: 50%;                        
+          transform: translate(0, -50%);
+          padding-left: 1.5em; 
+      }
   }
   &.horizontal {
     position: absolute;
@@ -61,7 +66,28 @@ div.orbit-wrapper div.timer {
     max-height: 100px;
     padding: 15px;
   }
+}*/
+
+#caption.vertical {
+  top:0;
+  min-height: 375px;
+  z-index: 2;
+  margin-left: 4px;
 }
+
+#caption.horizontal {
+  position:absolute;
+  bottom:0;
+  max-height:100px;
+  padding:15px;
+}
+
+#caption.vertical .middle {
+  vertical-align:middle;
+  margin: 20px;
+}
+
+
 
 .slide {
   h6 {
@@ -75,11 +101,6 @@ div.orbit-wrapper div.timer {
 
 .orbit div.orbit-slide {
   left: 0!important;
-}
-
-#caption.vertical .middle {
-  vertical-align: middle;
-  margin: 20px;
 }
 
 .slide {
