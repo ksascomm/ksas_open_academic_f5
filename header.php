@@ -31,7 +31,7 @@
   <?php include_once("parts-analytics.php"); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> onLoad="viewport()">
 	<header class="black_bg">
  		<div id="mobile-nav">
 			<div class="row">
@@ -43,7 +43,7 @@
 			<div class="row hide-for-print">
 					<div id="search-bar" class="small-12 columns">
 						
-							<div class="small-6 columns">
+							<div class="small-12 columns">
 							<?php $theme_option = flagship_sub_get_global_options();
 									$collection_name = $theme_option['flagship_sub_search_collection'];
 							?>
@@ -54,15 +54,7 @@
 								<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
 							</form>
 							</div>
-								<?php wp_nav_menu( array(
-									'theme_location' => 'search_bar',
-									'menu_class' => '',
-									'fallback_cb' => 'foundation_page_menu',
-									'container' => 'div',
-									'container_id' => 'search_links',
-									'container_class' => 'small-6 columns links inline',
-									'depth' => 1,
-									'items_wrap' => '%3$s', )); ?>
+						
 						
 					</div>	<!-- End #search-bar	 -->
 			</div>
@@ -70,7 +62,7 @@
 
 		<div id="desktop-nav">
 			<div class="row hide-for-print">
-				<div id="search-bar" class="small-12 large-5 large-offset-7 columns">
+				<div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
 					<div class="row">
 						<div class="small-6 columns">
 						<?php $theme_option = flagship_sub_get_global_options(); 
@@ -96,9 +88,13 @@
 				</div>	<!-- End #search-bar	 -->
 			</div>
 			<div class="row">
-				<div class="small-12 columns" id="logo_nav">
-					<li class="logo"><a href="http://krieger.jhu.edu" title="Krieger School of Arts & Sciences">Krieger School of Arts & Sciences</a></li>
-			<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
+				<div class="medium-12 columns" id="logo_nav">
+					<div class="medium-3 columns">
+						<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></li>
+					</div>
+					<div class="medium-9 columns">
+						<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
+					</div>	
 				</div>
 			</div>
 			<div class="row hide-for-print">

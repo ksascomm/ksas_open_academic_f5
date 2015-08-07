@@ -1,6 +1,5 @@
-			
-			<div class="row">
-				<div class="large-5 large-offset-7 columns">
+<div class="row">
+				<div class="small-12 medium-5 medium-offset-7 columns">
 				<h6>Jump to Faculty Member</h6>
 				<form name="jump">
 					<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
@@ -22,7 +21,7 @@
 				</div>
 			</div>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="large-4 small-12 columns">
+			<div class="small-12 medium-4 columns">
 				<?php if ( has_post_thumbnail()) { ?> 
 						<?php the_post_thumbnail('full'); ?>
 					<?php } ?>			    
@@ -65,7 +64,7 @@
 			    </p>
 			</div>
 
-			<dl class="tabs large-8 small-12 columns" data-tab>
+			<dl class="tabs small-12 medium-8 columns" data-tab>
 				<?php if ( get_post_meta($post->ID, 'ecpt_bio', true) ) : ?><dd class="active"><a href="#bio">Biography</a></dd><?php endif; ?>
 				
 				<?php if ( get_post_meta($post->ID, 'ecpt_research', true) ) : ?><dd><a href="#research">Research</a></dd><?php endif; ?>
