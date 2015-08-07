@@ -112,6 +112,47 @@ p, ul, ol, dl {
   .blueslide {
     background: inherit !important;
   }
+  #fields_search input[type="submit"] {
+    width: 35px;
+  }
+   ul.breadcrumbs {
+    li {
+      margin-left: 0px;
+    }
+   }
+   p.contact {
+    span {
+      margin-right: 2px;
+    }
+   }
+   .wrapper li {
+      margin-left: 5px;
+  }
+  .faculty {
+    padding-right: 10px;
+  }
+  .headshot {
+    height: auto;
+    width: 75%;
+  }
+  .single-people .tabs dd a {
+    width: 200px;
+  }
+  .book-entry {
+    height: 100%;
+    img {
+      height: auto;
+      width: 84%;
+    }
+  }
+  .tabs-content.faculty {
+    width: 110%;
+  }
+  .single-people .tabs {
+    dd a, li a {
+      background-color: #fff;
+    }
+  }
 }
 
 @media only screen and (max-width: 975px) {
@@ -151,10 +192,32 @@ p, ul, ol, dl {
   }
 }
 
-@media only screen and (max-width: 64em) {
-  #desktop-nav {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #caption.vertical {
+      top: 0;
+      min-height: 400px;
+      z-index: 2;
+      margin-left: 4px;
+      margin-bottom: 10px;
+  }
+  .blueslide {
+    background: rgba($sky, .9);
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+    #desktop-nav {
     display: none;
   }
+}
+
+@media only screen and (min-width: 1023px) {
+    #mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 64em) {
   #caption {
   &.vertical 
       h3 {
@@ -165,10 +228,6 @@ p, ul, ol, dl {
       }
     }
   #search-bar input[type="submit"], #field_search input[type="submit"] {
-  -webkit-border-top-left-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-bottomleft: 0px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
@@ -196,19 +255,16 @@ p, ul, ol, dl {
 }
 
 @media only screen and (min-width: 64.063em){
-p, ul, ol, dl {
-  font-size: 1.125rem;
-}
-  #mobile-nav {
-    display: none;
+  p, ul, ol, dl {
+    font-size: 1.125rem;
   }
 }
 
 
 @media only screen and (min-width: 86em) {
-p, ul, ol, dl {
-  font-size: 1.15rem;
-}
+  p, ul, ol, dl {
+    font-size: 1.15rem;
+  }
  h1, h2, h3, h4, h5, h6 {
     line-height: 1.4; }
 
@@ -233,7 +289,7 @@ p, ul, ol, dl {
 
 
 @media only screen and (min-width: 108em) {
-p, ul, ol, dl {
-  font-size: 1.175rem;
-} 
+  p, ul, ol, dl {
+    font-size: 1.175rem;
+  } 
 } 
