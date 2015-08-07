@@ -2,3 +2,8 @@ assets/bower_components/*
 assets/.sass-cache/*
 *.DS_Store
 *.codekit
+*.css.map
+assets/config.codekit
+
+/assets/functions/cache/
+node_modules
