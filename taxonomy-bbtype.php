@@ -2,7 +2,7 @@
 <div class="row sidebar_bg radius10" id="page">
 	<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<section class="content">
-		<?php if(is_tax('bbtype', 'udergrad-bb')){ ?>
+		<?php if(is_tax('bbtype', 'undergrad-bb')){ ?>
 		<h2>Undergraduate Bulletin Board</h2>
 		<?php } elseif(is_tax('bbtype', 'graduate-bb')){ ?>
 		<h2>Graduate Bulletin Boad</h2>
