@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Calendar - WP
+Template Name: Calendar - WP Plugin
 */
 ?>
 <?php get_header(); ?>
