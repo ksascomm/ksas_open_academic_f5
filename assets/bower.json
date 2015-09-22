@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0",
     "foundation": "zurb/bower-foundation"
   }
 }
