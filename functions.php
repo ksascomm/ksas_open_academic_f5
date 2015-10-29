@@ -186,4 +186,15 @@ function my_sitemap_replacement ($content) {
 }
 add_filter('simple_sitemaps-generated_urlset', 'my_sitemap_replacement');
 
+
+/**Get Images from Mapped Domain for Econ**/
+global $blog_id;
+if( $blog_id == '27' ) {
+
+function my_mapped_upload_url() {
+    return get_site_url() . '/wp-content/uploads' ;
+}
+add_filter( 'pre_option_upload_url_path', 'my_mapped_upload_url' );
+}
+
 ?>
