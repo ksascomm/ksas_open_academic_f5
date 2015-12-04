@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-	<div class="9-large columns wrapper radius-left offset-topgutter push-3">	
+	<div class="large-8 large-push-4 columns wrapper radius-left offset-topgutter push-3">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
 		<section class="content">
 		<h2>Archive</h2>
