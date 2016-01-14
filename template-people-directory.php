@@ -86,7 +86,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
 										<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>
-											<span class="icon-mobile"><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?></span>
+											<span class="icon-phone"><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?></span>
 										<?php endif; ?>
 										<?php if ( get_post_meta($post->ID, 'ecpt_fax', true) ) : ?>
 											<span class="icon-printer"><?php echo get_post_meta($post->ID, 'ecpt_fax', true); ?></span>
@@ -119,7 +119,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
 										<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>
-											<span class="icon-mobile"><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?></span>
+											<span class="icon-phone"><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?></span>
 										<?php endif; ?>
 										<?php if ( get_post_meta($post->ID, 'ecpt_fax', true) ) : ?>
 											<span class="icon-printer"><?php echo get_post_meta($post->ID, 'ecpt_fax', true); ?></span>
@@ -168,7 +168,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
 										<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>
-											<span class="icon-mobile"><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?></span>
+											<span class="icon-phone"><?php echo get_post_meta($post->ID, 'ecpt_phone', true); ?></span>
 										<?php endif; ?>
 										<?php if ( get_post_meta($post->ID, 'ecpt_fax', true) ) : ?>
 											<span class="icon-printer"><?php echo get_post_meta($post->ID, 'ecpt_fax', true); ?></span>
