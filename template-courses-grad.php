@@ -8,9 +8,9 @@ Template Name: Courses - Graduate
 <div class="row sidebar_bg radius10" id="page">
 <div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section class="content">
+		<main class="content" role="main">
  			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> <!--Start the loop -->
-				<h2><?php the_title(); ?>&nbsp;<a class="acc_expandall">[Expand All]</a></h2>
+				<h1><?php the_title(); ?>&nbsp;<a class="acc_expandall">[Expand All]</a></h1>
 				<?php the_content() ?>
 			<?php endwhile; endif ?>
 			
@@ -67,7 +67,7 @@ Template Name: Courses - Graduate
 		<?php endwhile; ?>
 			</dl>
 		<?php endif; ?>
-		</section>
+		</main>
 	</div>	<!-- End main content (left) section -->
 <?php locate_template('parts-sidebar-nav.php', true, false); ?>
 </div> <!-- End #landing -->

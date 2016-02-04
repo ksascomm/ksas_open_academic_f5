@@ -23,6 +23,16 @@ dd.active {
   margin-top: -3px;
 }
 
+.bio {
+ h1 {
+  font-size: 1.4375rem;
+  font-family: $font-subhead;
+}
+ h2 {
+  font-size: 1.125rem;
+ }
+}
+
 /******* Reusable Classes ************/
 
 a.white {
@@ -169,7 +179,7 @@ button, .button, .select-buttons li, .SECalendarPrevMonth, .SECalendarNextMonth 
   -moz-border-radius: 7px;
   border-radius: 7px;
   font-family: $font-stack;
-  color: #FFF;
+  color: #FFF !important;
   font-size: 16px;
   padding: 8px 12px;
   margin-right: 10px;
@@ -190,13 +200,16 @@ button a {
   color: #fff;
   &:hover, &:visited {
     color: #fff;
+    border-bottom: none;
   }
 }
 
-.button a {
+.button a, a.button {
   color: #fff;
+  border-bottom: none;
   &:hover, &:visited {
     color: #fff;
+    border-bottom: none;
   }
 }
 
@@ -239,6 +252,34 @@ button a {
     &:hover, &.selected {
       color: #000;
       text-shadow: 1px 1px 1px #FFF;
+    }
+  }
+}
+
+button {
+  a.selected {
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+  }
+  &.radio {
+    background-color: transparent;
+    font-size: 14px;
+    opacity: 1;
+    padding: 5px;
+    margin-right: 0;
+    text-transform: capitalize;
+    a {
+      color: $black;
+      padding: 5px;
+      &.selected, &:hover {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #00337f;
+        color: #FFF;
+      }
     }
   }
 }
@@ -500,34 +541,6 @@ ul[data-clearing] li {
   -ms-transition-property: height,width;
   -o-transition-property: height,width;
   transition-property: height,width;
-}
-
-button {
-  a.selected {
-    color: #FFF;
-    text-shadow: 1px 1px 1px #000;
-  }
-  &.radio {
-    background-color: transparent;
-    font-size: 14px;
-    opacity: 1;
-    padding: 5px;
-    margin-right: 0;
-    text-transform: capitalize;
-    a {
-      color: $black;
-      padding: 5px;
-      &.selected, &:hover {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        border-radius: 5px;
-        background-color: #00337f;
-        color: #FFF;
-      }
-    }
-  }
 }
 
 /******* FIELDS OF STUDY LANDING PAGES ******/

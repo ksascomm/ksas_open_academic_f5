@@ -1,18 +1,18 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
 <div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
-		<section class="content">
+		<main class="content" role="main">
 		<?php if(is_tax('profiletype', 'spotlight')){ ?>
-		<h2>Spotlights</h2>
+		<h1>Spotlights</h1>
 		<?php } elseif(is_tax('profiletype', 'undergraduate-profile')){ ?>
-		<h2>Undergraduate Profiles</h2>
+		<h1>Undergraduate Profiles</h1>
 		<?php } elseif(is_tax('profiletype', 'graduate-profile')){ ?>
-		<h2>Graduate Profiles</h2>
+		<h1>Graduate Profiles</h1>
 		<?php } ?>
 		<?php while ( have_posts()) : the_post(); ?>
 			<a href="<?php the_permalink(); ?>">	
 				
-				<h5><?php the_title();?></h5>
+				<h2><?php the_title();?></h2>
 					<?php if ( has_post_thumbnail()) { ?> 
 						<?php the_post_thumbnail('thumbnail', array('class'	=> "floatleft")); ?>
 					<?php } ?>
@@ -24,7 +24,7 @@
 		<div class="row">
 			<?php flagship_pagination(); ?>		
 		</div>	
-		</section>
+		</main>
 	</div>	<!-- End main content (left) section -->
 <?php locate_template('parts-sidebar-nav.php', true, false); ?>
 </div> <!-- End #landing -->

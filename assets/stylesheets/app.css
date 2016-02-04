@@ -7962,7 +7962,8 @@ th.hide-for-touch {
 .accordion .accordion-navigation, .accordion dd {
   border-top: 1px solid #e9e9e9; }
 .accordion .accordion-navigation > a, .accordion dd > a {
-  font-family: inherit; }
+  font-family: inherit;
+  border-bottom: inherit; }
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
   margin-bottom: 1rem; }
 
@@ -8225,23 +8226,24 @@ a.button:hover {
   padding: 0;
   color: #ccc; }
 
-.single-people p {
-  line-height: 2em; }
 .single-people .tabs dd a, .single-people .tabs li a {
-  padding: 0 15px;
   outline: none;
   display: block;
   background-color: #efefef;
   color: #222222;
-  padding: 0.88889rem 1.65rem;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
-  font-size: 0.88889rem; }
+  padding: 0.88889rem 1rem;
+  font-family: 'gentona-light', Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.88889rem;
+  border-bottom: none; }
 
 #bioTab h6 {
   margin-bottom: 20px; }
 
 .single-people .tabs {
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 16px !important; }
 
 #directory {
   list-style: none; }
@@ -8285,7 +8287,7 @@ li.person img {
   float: left;
   margin-bottom: 5px; }
 li.person h4 {
-  color: #00337f; }
+  color: #005eb8; }
 
 #LibraInsideDiv .statistic, #LibraInsideDiv .author, #LibraInsideDiv .title h1 {
   display: none; }
@@ -8313,6 +8315,9 @@ li.person h4 {
   bottom: -40px;
   right: 0; }
 
+p.listing {
+  font-size: 1.05rem; }
+
 p.pub {
   margin-bottom: 3px;
   line-height: 1.6em; }
@@ -8332,12 +8337,12 @@ body {
   font-weight: 300;
   font-style: normal; }
 
-h1, h2, h3 {
+h1 {
   font-family: 'quadon', Arial, sans-serif;
   font-weight: 400;
   font-style: normal; }
 
-h4, h5, h6, .semibold {
+h2, h3, h4, h5, h6, .semibold {
   font-family: 'gentona-book', Arial, sans-serif;
   font-weight: 400;
   font-style: normal; }
@@ -8350,6 +8355,15 @@ table thead tr th, table tfoot tr td {
   font-family: 'quadon', Arial, sans-serif;
   font-weight: 400;
   font-style: normal; }
+
+.wrapper a {
+  border-bottom: .125em dotted;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  color: #005eb8; }
+  .wrapper a:hover {
+    color: #2c2c33;
+    border-bottom-color: #005eb8;
+    border-bottom-style: solid; }
 
 em, i {
   font-family: 'gentona-light', Arial, sans-serif;
@@ -8438,12 +8452,47 @@ ol {
 .tabs.pill dd, .tabs.pill li {
   margin-bottom: 7px; }
 
+.news-item h1 {
+  font-size: 1.25rem;
+  font-family: 'gentona-book', Arial, sans-serif; }
+.news-item h2 {
+  font-size: 1.1rem;
+  margin-bottom: 3px; }
+
+.content h1 {
+  font-size: 2.25rem; }
+
+.news h1, .archive h1 {
+  font-size: 2.125rem; }
+.news h2, .archive h2 {
+  font-size: 1.25rem; }
+.news h3, .archive h3 {
+  font-size: 1.1875rem; }
+.news h4, .archive h4 {
+  font-size: 1.125rem; }
+.news h5, .archive h5 {
+  font-size: 1.0625rem; }
+.news h6, .archive h6 {
+  font-size: 1rem; }
+
+.news-item h1 {
+  font-size: 1.25rem;
+  font-family: 'gentona-book', Arial, sans-serif; }
+.news-item h2 {
+  font-size: 1.1rem;
+  margin-bottom: 3px; }
+
 /******* Footer ************/
 footer {
   background: #000;
   padding-top: 25px; }
   footer a {
-    color: #CCC; }
+    color: #CCC;
+    border-bottom: .125em solid;
+    border-bottom-color: rgba(0, 0, 0, 0.1); }
+    footer a:hover {
+      color: #fff;
+      border-bottom: none; }
 
 .inline-list li a {
   color: #CCC; }
@@ -9269,7 +9318,7 @@ ul.nav ul.sub-menu {
   font-family: 'gentona-book', Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #336699; }
+  color: #005eb8; }
 
 #widget article {
   margin: 0 20px 40px; }
@@ -9353,26 +9402,6 @@ ul.orbit-bullets {
 div.orbit-wrapper div.timer {
   display: none; }
 
-/*#caption {
-  &.vertical {
-    min-height: 425px;
-    position: relative;
-    bottom: 0;
-    margin-left: 4px;
-       .middle {
-          position: absolute;           
-          top: 50%;                        
-          transform: translate(0, -50%);
-          padding-left: 1.5em; 
-      }
-  }
-  &.horizontal {
-    position: absolute;
-    bottom: 0;
-    max-height: 100px;
-    padding: 15px;
-  }
-}*/
 #caption.vertical {
   top: 0;
   min-height: 375px;
@@ -9445,6 +9474,12 @@ div.orbit img.fluid-placeholder {
 dd.active {
   border-top: 3px solid #3478b6;
   margin-top: -3px; }
+
+.bio h1 {
+  font-size: 1.4375rem;
+  font-family: 'gentona-book', Arial, sans-serif; }
+.bio h2 {
+  font-size: 1.125rem; }
 
 /******* Reusable Classes ************/
 a.white:hover, a.white:visited {
@@ -9551,7 +9586,7 @@ button, .button, .select-buttons li, .SECalendarPrevMonth, .SECalendarNextMonth 
   border: none;
   border-radius: 7px;
   font-family: 'gentona-light', Arial, sans-serif;
-  color: #FFF;
+  color: #FFF !important;
   font-size: 16px;
   padding: 8px 12px;
   margin-right: 10px;
@@ -9568,12 +9603,15 @@ button:hover, .button:hover, .select-buttons li:hover {
 button a {
   color: #fff; }
   button a:hover, button a:visited {
-    color: #fff; }
+    color: #fff;
+    border-bottom: none; }
 
-.button a {
-  color: #fff; }
-  .button a:hover, .button a:visited {
-    color: #fff; }
+.button a, a.button {
+  color: #fff;
+  border-bottom: none; }
+  .button a:hover, .button a:visited, a.button:hover, a.button:visited {
+    color: #fff;
+    border-bottom: none; }
 
 .select-buttons li a {
   color: #fff; }
@@ -9601,6 +9639,24 @@ button a {
 .button.radio a:hover, .button.radio a.selected {
   color: #000;
   text-shadow: 1px 1px 1px #FFF; }
+
+button a.selected {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000; }
+button.radio {
+  background-color: transparent;
+  font-size: 14px;
+  opacity: 1;
+  padding: 5px;
+  margin-right: 0;
+  text-transform: capitalize; }
+  button.radio a {
+    color: #2c2c33;
+    padding: 5px; }
+    button.radio a.selected, button.radio a:hover {
+      border-radius: 5px;
+      background-color: #00337f;
+      color: #FFF; }
 
 .radius10 {
   border-radius: 10px; }
@@ -9788,24 +9844,6 @@ ul[data-clearing] li {
     transition-duration: .8s;
     -webkit-transition-property: -webkit-transform,opacity;
     transition-property: transform,opacity; }
-
-button a.selected {
-  color: #FFF;
-  text-shadow: 1px 1px 1px #000; }
-button.radio {
-  background-color: transparent;
-  font-size: 14px;
-  opacity: 1;
-  padding: 5px;
-  margin-right: 0;
-  text-transform: capitalize; }
-  button.radio a {
-    color: #2c2c33;
-    padding: 5px; }
-    button.radio a.selected, button.radio a:hover {
-      border-radius: 5px;
-      background-color: #00337f;
-      color: #FFF; }
 
 /******* FIELDS OF STUDY LANDING PAGES ******/
 p.contact {

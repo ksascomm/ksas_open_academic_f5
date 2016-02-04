@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
 	<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
-		<section class="content">
+		<main class="content" role="main">
 		<?php if(is_tax('bbtype', 'undergrad-bb')){ ?>
 		<h2>Undergraduate Bulletin Board</h2>
 		<?php } elseif(is_tax('bbtype', 'graduate-bb')){ ?>
@@ -23,7 +23,7 @@
 		<div class="row">
 			<?php flagship_pagination($wp_query->max_num_pages); ?>		
 		</div>	
-		</section>
+		</main>
 	</div>	<!-- End main content (left) section -->
 <?php locate_template('parts-sidebar-nav.php', true, false); ?>
 </div> <!-- End #landing -->

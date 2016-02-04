@@ -77,11 +77,13 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 				<li class="person <?php echo get_the_directory_filters($post);?> <?php echo get_the_roles($post); ?>">
 					<div class="row">
 						<div class="large-12 columns">
-							<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
+							
 							<?php if ( has_post_thumbnail()) { ?> 
-								<?php the_post_thumbnail('directory', array('class' => 'floatleft hide-for-small')); ?>
+								<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
+									<?php the_post_thumbnail('directory', array('class' => 'floatleft hide-for-small')); ?>
+								</a>
 							<?php } ?>			    
-									<h4 class="no-margin"><?php the_title(); ?></h4></a>
+									<h4 class="no-margin"><a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a></h4>
 									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h6><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
@@ -159,11 +161,12 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 				<li class="person <?php echo get_the_directory_filters($post);?> <?php echo get_the_roles($post); ?>">
 					<div class="row">
 						<div class="large-12 columns">
-							<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
 							<?php if ( has_post_thumbnail()) { ?> 
-								<?php the_post_thumbnail('directory', array('class' => 'floatleft hide-for-small')); ?>
+								<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field">
+									<?php the_post_thumbnail('directory', array('class' => 'floatleft hide-for-small')); ?>
+								</a>
 							<?php } ?>			    
-									<h4 class="no-margin"><?php the_title(); ?></h4></a>
+									<h4 class="no-margin"><a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a></h4>
 									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h6><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">

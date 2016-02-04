@@ -1,4 +1,4 @@
-	<aside class="small-12 large-4 columns hide-for-print sidebar-right" id="sidebar"> <!-- Begin Sidebar -->
+	<aside class="small-12 large-4 columns hide-for-print sidebar-right" id="sidebar" role="complementary"> <!-- Begin Sidebar -->
 		<!-- Page Specific Sidebar -->
 		<?php if ( have_posts() && get_post_meta($post->ID, 'ecpt_page_sidebar', true) ) : while ( have_posts() ) : the_post(); 
 				echo apply_filters('the_content', get_post_meta($post->ID, 'ecpt_page_sidebar', true));

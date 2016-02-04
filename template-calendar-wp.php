@@ -7,7 +7,7 @@ Template Name: Calendar - WP Plugin
 <div class="row sidebar_bg radius10" id="page">
 <div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section class="content">
+		<main class="content" role="main">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<p align="right"><a href="<?php echo site_url(); ?>/feed/ical?categories=<?php echo get_post_meta($post->ID, 'cal_cats', true); ?>"class="button">Subscribe to <?php the_title(); ?></a></p>
 			<?php if (!is_handheld()) {
@@ -34,7 +34,7 @@ Template Name: Calendar - WP Plugin
 					"datefrom" => "today"));
 			} endwhile; endif; ?>
 			
-		</section>
+		</main>
 	</div>
 <?php locate_template('parts-sidebar-nav.php', true, false); ?>
 </div> 

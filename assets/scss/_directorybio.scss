@@ -53,19 +53,18 @@
 }
 
 .single-people {
-  p {
-    line-height: 2em;
-  }
   .tabs {
     dd a, li a {
-      padding: 0 15px;
-      outline: none;
+    outline: none;
     display: block;
     background-color: #efefef;
     color: #222222;
-    padding: 0.88889rem 1.65rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+    padding: 0.88889rem 1rem;
+    font-family: $font-stack;
+    font-weight: 300;
+    font-style: normal;
     font-size: 0.88889rem;
+    border-bottom: none;
     }
   }
 }
@@ -76,6 +75,7 @@
 
 .single-people .tabs {
   margin-top: 40px;
+  margin-bottom: 16px !important;
 }
 
 #directory {
@@ -136,7 +136,7 @@ li.person {
     margin-bottom: 5px;
   }
   h4 {
-    color: #00337f;
+    color: $blue;
   }
 }
 
@@ -172,6 +172,10 @@ li.person {
     bottom: -40px;
     right: 0;
   }
+}
+
+p.listing {
+  font-size: 1.05rem;
 }
 
 p.pub {

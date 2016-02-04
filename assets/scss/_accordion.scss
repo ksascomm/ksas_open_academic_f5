@@ -27,6 +27,7 @@
   }
   .accordion-navigation > a, dd > a {
     font-family: inherit;
+    border-bottom: inherit;
   }
    .accordion-navigation > .content.active, dd > .content.active {
     margin-bottom: 1rem;

@@ -19,11 +19,11 @@ Template Name: Mini Homepage
 					</div>
 				<?php } ?>
 			<div class="row">
-			<section class="large-8 columns">
-				<h2><?php the_title();?></h2>
+			<main class="large-8 columns" role="main">
+				<h1><?php the_title();?></h1>
 				<?php the_content(); ?>
 			<?php endwhile; endif; ?>			
-			</section>
+			</main>
 			<?php locate_template('parts-second-sidebar.php', true, false); ?>
 			</div>
 	</div>	<!-- End main content (left) section -->

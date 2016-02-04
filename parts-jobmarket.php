@@ -43,7 +43,7 @@
 			    </p>
 			</div>
 			<div class="large-8 columns">
-				<h2><?php the_title() ?></h2>	
+				<h1><?php the_title() ?></h1>	
 								  <p><?php if ( get_post_meta($post->ID, 'ecpt_thesis', true) ) : ?><strong>Thesis Title:</strong>&nbsp;"<?php echo get_post_meta($post->ID, 'ecpt_thesis', true); ?>"<?php endif; ?>
 								  <?php if ( get_post_meta($post->ID, 'ecpt_job_abstract', true) ) : ?>&nbsp;- <a href="<?php echo get_post_meta($post->ID, 'ecpt_job_abstract', true); ?>">Download Abstract</a> (PDF)<?php endif; ?></p>
 								  <?php if (get_post_meta($post->ID, 'ecpt_fields', true)) : ?><p><strong>Fields:</strong>&nbsp;<?php echo get_post_meta($post->ID, 'ecpt_fields', true); ?></p><?php endif; ?>

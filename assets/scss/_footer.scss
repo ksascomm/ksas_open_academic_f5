@@ -4,6 +4,12 @@ footer {
   padding-top: 25px;
   a {
     color: #CCC;
+    border-bottom: .125em solid;
+    border-bottom-color: rgba(0,0,0,.1);
+    &:hover {
+      color: #fff;
+      border-bottom: none;
+    }
   }
 }
 

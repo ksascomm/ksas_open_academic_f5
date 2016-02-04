@@ -7,8 +7,8 @@ Template Name: Faculty Books
 <div class="row wrapper radius10" id="page" role="main">
 	<div class="large-12 columns">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section class="content">
-			<h2><?php the_title(); ?></h2>
+		<main class="content" role="main">
+			<h1><?php the_title(); ?></h1>
 			<?php the_content(); ?>
 			<?php 
 			$paged = (get_query_var('paged')) ? (int) get_query_var('paged') : 1;
@@ -50,7 +50,7 @@ Template Name: Faculty Books
 		<div class="row">
 			<?php flagship_pagination($faculty_books_query->max_num_pages); ?>		
 		</div>	
-		</section>
+		</main>
 	</div>	<!-- End main content (left) section -->
 </div> <!-- End #landing -->
 <?php get_footer(); ?>
