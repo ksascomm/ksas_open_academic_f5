@@ -62,7 +62,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 	<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
 	<section class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<h2><?php the_title();?></h2>
+			<h1><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
 		<?php $theme_option = flagship_sub_get_global_options();
 				if ( $theme_option['flagship_sub_directory_search']  == '1' ) { locate_template('parts-directory-search.php', true); } ?>
@@ -83,8 +83,12 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 									<?php the_post_thumbnail('directory', array('class' => 'floatleft hide-for-small')); ?>
 								</a>
 							<?php } ?>			    
-									<h4 class="no-margin"><a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a></h4>
-									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h6><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
+									<h4 class="no-margin">
+										<a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a>
+									</h4>
+									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?>
+										<h5 class="no-margin"><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h5>
+									<?php endif; ?>
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
 										<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>
@@ -117,7 +121,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 						<div class="large-12 columns">
 							<div class="row">
 									<h4 class="no-margin"><?php the_title(); ?></h4>
-									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h6><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
+									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h5 class="no-margin"><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
 										<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>
@@ -167,7 +171,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 								</a>
 							<?php } ?>			    
 									<h4 class="no-margin"><a href="<?php the_permalink();?>" title="<?php the_title(); ?>" class="field"><?php the_title(); ?></a></h4>
-									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h6><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
+									<?php if ( get_post_meta($post->ID, 'ecpt_position', true) ) : ?><h5 class="no-margin"><?php echo get_post_meta($post->ID, 'ecpt_position', true); ?></h6><?php endif; ?>
 									<?php if ( get_post_meta($post->ID, 'ecpt_degrees', true) ) : ?><?php echo get_post_meta($post->ID, 'ecpt_degrees', true); ?><?php endif; ?>
 									<p class="contact no-margin">
 										<?php if ( get_post_meta($post->ID, 'ecpt_phone', true) ) : ?>

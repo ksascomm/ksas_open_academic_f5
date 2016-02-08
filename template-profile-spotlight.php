@@ -10,7 +10,7 @@ Template Name: Profiles - Spotlights
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
 		<section class="content">
  			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> <!--Start the loop -->
-				<h2><?php the_title(); ?>&nbsp;</h2>
+				<h1><?php the_title(); ?>&nbsp;</h1>
 				<?php the_content() ?>
 			<?php endwhile; endif ?>
 			
