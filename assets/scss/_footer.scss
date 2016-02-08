@@ -52,6 +52,15 @@ footer {
   }
 }
 
+#menu-footer-links a, #copyright a {
+  color: #fff !important;
+  border-bottom: .125em dotted;
+  border-bottom-color: rgba(255, 255, 255, 0.9);
+  &:hover {
+    border-bottom: .125em solid;
+  }
+}
+
 #quicklinks {
   padding: 0;
   background: none;

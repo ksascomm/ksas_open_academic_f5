@@ -127,6 +127,18 @@ ul.nav {
     line-height: 1.35em;
     font-size: 90%;
   }
+ a {
+    border-bottom: .125em dotted;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    &:hover {
+      color: $black !important;
+      border-bottom-style: solid;
+    }
+  }
+  li a {
+    font-family: $font-stack !important;
+    font-weight: 300 !important;
+  }
 }
 
 .hub h6, .ksas_books h6 {
