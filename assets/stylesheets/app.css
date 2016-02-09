@@ -8420,7 +8420,7 @@ p {
   border: solid #f1f1f1 2px; }
 
 h6, time {
-  font-size: 10px;
+  font-size: 12px;
   color: #666;
   font-family: 'gentona-book', Arial, sans-serif;
   font-weight: 400;
@@ -8622,7 +8622,7 @@ footer {
       display: block;
       line-height: 1em; }
 
-#search-bar {
+.search-bar, #search-bar {
   background: #333;
   border-radius: 10px;
   color: #ccc;
@@ -8632,13 +8632,13 @@ footer {
   font-style: normal;
   margin-top: 5px;
   margin-bottom: 10px; }
-  #search-bar .columns {
+  .search-bar .columns, #search-bar .columns {
     padding: 0; }
-  #search-bar a {
+  .search-bar a, #search-bar a {
     color: #FFF;
     font-size: 9px;
     letter-spacing: 1px; }
-  #search-bar .links {
+  .search-bar .links, #search-bar .links {
     margin-top: 0px; }
 
 .links li {
@@ -8649,7 +8649,7 @@ footer {
   .links li:last-child:after {
     content: ""; }
 
-#search-bar input[type="text"] {
+.search-bar input[type="text"], #search-bar input[type="text"] {
   height: 31px;
   margin-bottom: 0px;
   background: white;
@@ -8664,7 +8664,7 @@ footer {
   float: left;
   width: 75%;
   border: none; }
-#search-bar input[type="submit"] {
+.search-bar input[type="submit"], #search-bar input[type="submit"] {
   background: #666;
   height: 31px;
   width: 30px;
@@ -8680,6 +8680,20 @@ footer {
   float: left;
   padding: 0;
   color: #ccc; }
+
+.search-bar button {
+  background: #666;
+  height: 31px;
+  width: 30px;
+  border-radius: inherit;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: none;
+  float: left;
+  padding: 0;
+  color: #e2e1df;
+  margin-right: inherit;
+  margin-bottom: inherit; }
 
 #mobile-nav {
   padding-top: 4%; }
@@ -10052,6 +10066,10 @@ p.wp-caption-text {
     padding-left: 1em; }
   .single-people .tabs dd a {
     padding: .88889rem .7rem !important; } }
+
+@media only screen and (min-width: 40.0625em) {
+  h1 {
+    font-size: 2.125rem; } }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   .faculty {

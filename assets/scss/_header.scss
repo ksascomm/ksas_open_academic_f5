@@ -56,7 +56,7 @@
   }
 }
 
-#search-bar {
+.search-bar, #search-bar {
   background: #333;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -92,7 +92,7 @@
   }
 }
 
-#search-bar input {
+.search-bar input, #search-bar input {
   &[type="text"] {
     height: 31px;
     margin-bottom: 0px;
@@ -125,6 +125,23 @@
     float: left;
     padding: 0;
     color: #ccc;
+  }
+}
+
+.search-bar {
+  button {
+    background: #666;
+    height: 31px;
+    width: 30px;
+    border-radius: inherit;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: none;
+    float: left;
+    padding: 0;
+    color: #e2e1df;
+    margin-right: inherit;
+    margin-bottom: inherit;
   }
 }
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><?php create_page_title(); ?></title>
+  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon.ico" />
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri() ?>/assets/images/apple-touch-icon-144x144-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/assets/images/apple-touch-icon-114x114-precomposed.png" />
@@ -34,57 +34,19 @@
 	<header class="black_bg">
  		<div id="mobile-nav">
 			<div class="row">
-				<div class="small-12 large-4 columns centered">
-				<div class="mobile-logo centered"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
+				<div class="small-12 large-4 columns ">
+				<div class="mobile-logo"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
 					<h1><a class="white" href="<?php echo site_url(); ?>"><?php echo get_bloginfo( 'title' ); ?></a></h1>
 				</div>
 			</div>
 			<div class="row hide-for-print">
-					<div id="search-bar" class="small-12 columns">
-						
-							<div class="small-12 columns">
-							<?php $theme_option = flagship_sub_get_global_options();
-									$collection_name = $theme_option['flagship_sub_search_collection'];
-							?>
-
-							<form method="GET" action="<?php echo site_url('/search'); ?>">
-								<input type="submit" class="icon-search" value="&#xe004;" />
-								<input type="text" name="q" placeholder="Search this site" />
-								<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
-							</form>
-							</div>
-						
-						
-					</div>	<!-- End #search-bar	 -->
+				<?php get_template_part( 'parts', 'search-mobile' ); ?>
 			</div>
 		</div>
 
 		<div id="desktop-nav">
 			<div class="row hide-for-print">
-				<div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
-					<div class="row">
-						<div class="small-6 columns">
-						<?php $theme_option = flagship_sub_get_global_options(); 
-								$collection_name = $theme_option['flagship_sub_search_collection'];
-						?>
-
-						<form method="GET" action="<?php echo site_url('/search'); ?>">
-							<input type="submit" class="icon-search" value="&#xe004;" />
-							<input type="text" name="q" placeholder="Search this site" />
-							<input type="hidden" name="site" value="<?php echo $collection_name; ?>" />
-						</form>
-						</div>
-							<?php wp_nav_menu( array( 
-								'theme_location' => 'search_bar', 
-								'menu_class' => '', 
-								'fallback_cb' => 'foundation_page_menu', 
-								'container' => 'div',
-								'container_id' => 'search_links', 
-								'container_class' => 'small-6 columns links inline',
-								'depth' => 1,
-								'items_wrap' => '%3$s', )); ?> 
-					</div>	
-				</div>	<!-- End #search-bar	 -->
+				<?php get_template_part( 'parts', 'search-bar' ); ?>
 			</div>
 			<div class="row">
 				<div class="medium-12 columns" id="logo_nav">
@@ -108,5 +70,5 @@
 					'depth' => 3  )); ?>
 			</div>
 		</div>
-		</header>
-		<div id="nav-break"></div>
+	</header>
+<div id="nav-break"></div>
