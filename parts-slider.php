@@ -14,8 +14,8 @@
 			<ul id="slider" data-orbit data-options="animation: fade; animation_speed:2000; timer:true; timer_speed:3000; navigation_arrows:false; bullets:false; slide_number:false;">
 				<?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 					<li>
-						<img src="<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>" class="no-gutter" />
-					<div class="orbit-caption">
+						<img src="<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>" class="no-gutter" alt="<?php echo the_title(); ?>"/>
+						<div class="orbit-caption">
 							<summary class="small-4 small-push-8 columns vertical <?php echo get_post_meta($post->ID, 'ecpt_slidecolor', true); ?> no-gutter" id="caption">
 								<div class="middle">
 									<?php $slidertitle = the_title(); if ($slidertitle != '') { ?>
@@ -28,8 +28,8 @@
 										<div class="button <?php echo get_post_meta($post->ID, 'ecpt_slidecolor', true); ?>"><a href="<?php echo get_post_meta($post->ID, 'ecpt_urldestination', true); ?>"><span class="uppercase">Find Out More</span></a></div>
 									<?php endif;?>
 								</div>
-						</summary>	
-					</div>
+							</summary>	
+						</div>
 					</li>
 				<?php endwhile; ?>
 						
