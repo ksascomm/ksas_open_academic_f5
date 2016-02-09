@@ -12,7 +12,7 @@ $collection_name = $theme_option['flagship_sub_search_collection'];
 
 <div class="row wrapper radius10">
 	<div class="large-12 columns">
-		<h2>Search Results</h2>
+		<h1>Search Results</h1>
 		<section>
 
 <?php 
