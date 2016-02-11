@@ -34,26 +34,26 @@ Template Name: Courses - Graduate
 			<a href="#post<?php the_ID(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?>
 				<?php if ( get_post_meta($post->ID, 'ecpt_credit', true) ) : ?>
 					&nbsp;(<?php echo get_post_meta($post->ID, 'ecpt_credit', true); ?> Credits)
-				<?php endif; ?><i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i></a>
+				<?php endif; ?><span class="fa fa-caret-down"></span><span class="fa fa-caret-up"></span></a>
 			<div id="post<?php the_ID(); ?>" class="content course">
 				<?php the_content()?>
 				<?php if ( get_post_meta($post->ID, 'ecpt_prereqs', true) ) : ?>
-					<p><b>Prerequisites:</b> 
+					<p><strong>Prerequisites:</strong> 
 					<?php echo get_post_meta($post->ID, 'ecpt_prereqs', true); ?></p>
 				<?php endif; ?>
 				<p>
 				<?php if ( get_post_meta($post->ID, 'ecpt_instructor', true) ) : ?>
-					<b>Instructor:</b> 
+					<strong>Instructor:</strong> 
 					<?php echo get_post_meta($post->ID, 'ecpt_instructor', true); ?><br>
 				<?php endif; ?>
 				
 				<?php if ( get_post_meta($post->ID, 'ecpt_course_times', true) ) : ?>
-					<b>Course Times:</b> 
+					<strong>Course Times:</strong> 
 					<?php echo get_post_meta($post->ID, 'ecpt_course_times', true); ?><br>
 				<?php endif; ?>
 				
 				<?php if ( get_post_meta($post->ID, 'ecpt_course_limit', true) ) : ?>
-					<b>Course Limit:</b> 
+					<strong>Course Limit:</strong> 
 					<?php echo get_post_meta($post->ID, 'ecpt_course_limit', true); ?><br>
 				<?php endif; ?>
 				
