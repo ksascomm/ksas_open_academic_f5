@@ -10,6 +10,7 @@
   -moz-border-radius-bottomleft: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  list-style: none;
 }
 
 #logo_nav li.logo a {
@@ -107,7 +108,7 @@
     display: inline;
     float: left;
     width: 75%;
-    border: none;
+    border: 1px solid $grey;
   }
   &[type="submit"] {
     background: #666;

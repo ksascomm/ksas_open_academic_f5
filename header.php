@@ -45,15 +45,15 @@
 		</div>
 
 		<div id="desktop-nav">
-			<div class="row hide-for-print">
-				<?php get_template_part( 'parts', 'search-bar' ); ?>
-			</div>
+			
+				<?php get_template_part( 'parts', 'offcanvas' ); ?>
+			
 			<div class="row">
 				<div class="medium-12 columns" id="logo_nav">
 					<div class="medium-3 columns">
 						<li class="logo"><a href="<?php echo network_home_url(); ?>" title="Krieger School of Arts & Sciences"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo.png" alt="jhu logo"></a></li>
 					</div>
-					<div class="medium-9 columns">
+					<div class="medium-8 medium-offset-1 large-9 columns">
 						<h1><a class="white" href="<?php echo site_url(); ?>"><span class="small"><?php echo get_bloginfo ( 'description' ); ?></span><?php echo get_bloginfo( 'title' ); ?></a></h1>
 					</div>	
 				</div>
