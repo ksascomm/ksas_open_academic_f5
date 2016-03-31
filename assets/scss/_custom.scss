@@ -53,6 +53,21 @@ dd.active {
     }
 }
 
+#gallery-1 .gallery-item {
+  float: left;
+  margin: 7px;
+  max-width: 75px;
+} 
+
+#gallery-1 {
+  display: table;
+}   
+
+/*remove title on simple lightbox plugin*/ 
+span.slb_data_title {
+    display: none;
+}
+
 /******* Reusable Classes ************/
 
 a.white {
