@@ -23,6 +23,7 @@
 									'menu_class' => 'nav', 
 									'container_class' => 'offset-gutter',
 									'submenu' => $ancestor_title,
+									'items_wrap' => '<ul class="%2$s" role="navigation" aria-label="Sidebar Menu">%3$s</ul>',
 									'depth' => 2				
 								));
 							}
@@ -42,7 +43,7 @@
 									'theme_location' => 'main_nav', 
 									'menu_class' => 'nav',
 									'container_class' => 'offset-gutter',
-									'items_wrap' =>  '<div id="sidebar_header"><h5 class="grey">Also in <span class="black bold">' . $page_name . '</span></h5></div><ul class="%2$s">%3$s</ul>',				
+									'items_wrap' =>  '<div id="sidebar_header"><h5 class="grey">Also in <span class="black bold">' . $page_name . '</span></h5></div><ul class="%2$s" role="navigation" aria-label="Sidebar menu">%3$s</ul>',				
 									'submenu' => $page_name,
 									'depth' => 1,
 									'echo' => true
