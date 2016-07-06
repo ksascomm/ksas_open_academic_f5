@@ -106,7 +106,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 											<span class="icon-location"><?php echo get_post_meta($post->ID, 'ecpt_office', true); ?></span>
 										<?php endif; ?>
 									</p>
-						<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><b>Research Interests:&nbsp;</b><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
+						<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><strong>Research Interests:&nbsp;</strong><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
 					</div>
 				</li>		
 		<?php endwhile; endif;?>
@@ -142,7 +142,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 												<a href="<?php echo get_post_meta($post->ID, 'ecpt_website', true); ?>" target="_blank"><span class="icon-globe">Personal Website</a></span>
 										<?php endif; ?>
 									</p>
-						<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><b>Research Interests:&nbsp;</b><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
+						<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><strong>Research Interests:&nbsp;</strong><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
 						</div>
 					</div>
 				</li>		
@@ -189,7 +189,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 											<span class="icon-location"><?php echo get_post_meta($post->ID, 'ecpt_office', true); ?></span>
 										<?php endif; ?>
 									</p>
-						<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><b>Research Interests:&nbsp;</b><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
+						<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><strong>Research Interests:&nbsp;</strong><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
 					</div>
 				</li>		
 		<?php endwhile; endif;?>		
