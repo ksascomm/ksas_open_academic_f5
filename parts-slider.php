@@ -18,9 +18,6 @@
 						<div class="orbit-caption">
 							<summary class="small-4 small-push-8 columns vertical <?php echo get_post_meta($post->ID, 'ecpt_slidecolor', true); ?> no-gutter" id="caption">
 								<div class="middle">
-									<?php $slidertitle = the_title(); if ($slidertitle != '') { ?>
-										<h3 class="white"><?php the_title(); ?></h3>
-									<?php } ?>
 									<?php $slidercontent = get_the_content(); if($slidercontent != '') { ?>
 										<h5 class="white"><?php echo get_the_content(); ?></h5>
 									<?php } ?>
