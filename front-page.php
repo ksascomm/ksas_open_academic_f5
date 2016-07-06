@@ -1,6 +1,6 @@
 <?php get_header(); locate_template('parts-slider.php', true);?>
 <div class="row homepage_bg">
-	<main class="large-8 columns wrapper toplayer content" role="main">		
+	<main class="large-8 columns wrapper toplayer content">		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
 			<?php $frontpagecontent = the_content(); if($frontpagecontent != '') { ?>

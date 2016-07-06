@@ -2,7 +2,7 @@
 <div class="row sidebar_bg radius10" id="page">
 	<div class="large-8 large-push-4 columns wrapper radius-left offset-topgutter push-3">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>
-		<main class="content" role="main">
+		<main class="content">
 			<h1>Archive</h1>
 			<?php while ( have_posts()) : the_post(); ?>
 				<a href="<?php the_permalink(); ?>">	

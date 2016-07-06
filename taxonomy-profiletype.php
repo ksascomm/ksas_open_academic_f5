@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
 <div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
-		<main class="content" role="main">
+		<main class="content">
 		<?php if(is_tax('profiletype', 'spotlight')){ ?>
 		<h1>Spotlights</h1>
 		<?php } elseif(is_tax('profiletype', 'undergraduate-profile')){ ?>
