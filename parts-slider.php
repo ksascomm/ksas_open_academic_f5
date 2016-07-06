@@ -22,7 +22,7 @@
 										<h5 class="white"><?php echo get_the_content(); ?></h5>
 									<?php } ?>
 								   	<?php if ( get_post_meta($post->ID, 'ecpt_button', true) ) : ?>				
-										<div class="button <?php echo get_post_meta($post->ID, 'ecpt_slidecolor', true); ?>"><a href="<?php echo get_post_meta($post->ID, 'ecpt_urldestination', true); ?>"><span class="uppercase">Find Out More</span></a></div>
+										<div class="button <?php echo get_post_meta($post->ID, 'ecpt_slidecolor', true); ?>"><a href="<?php echo get_post_meta($post->ID, 'ecpt_urldestination', true); ?>" onclick="ga('send', 'event', 'Homepage Slider', 'Click', '<?php echo get_post_meta($post->ID, 'ecpt_urldestination', true); ?>')"><span class="uppercase">Find Out More</span></a></div>
 									<?php endif;?>
 								</div>
 							</summary>	
