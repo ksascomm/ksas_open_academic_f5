@@ -2,8 +2,9 @@
 	if ( false === ( $slider_query = get_transient( 'slider_query' ) ) ) {
 		$slider_query = new WP_Query(array(
 			'post_type' => 'slider',
-			'posts_per_page' => '5'));
-		set_transient( 'slider_query', $slider_query, 2592000 );
+			'posts_per_page' => '-1',
+			'orderby' => 'rand'));
+		set_transient( 'slider_query', $slider_query, 86400 );
 	} 	
 	if ( $slider_query->have_posts() ) :
 ?>
@@ -11,7 +12,11 @@
 	<div class="row">
 		<div class="slideshow-wrapper">
 			<div class="preloader"></div>
-			<ul id="slider" data-orbit data-options="animation: fade; animation_speed:2000; timer:true; timer_speed:3000; navigation_arrows:false; bullets:false; slide_number:false;">
+			<?php if ($slider_query->post_count == 1) : ?>
+				<ul id="slider" data-orbit data-options="navigation_arrows:false; bullets:false; slide_number:false;">
+			<?php else :?> 
+				<ul id="slider" data-orbit data-options="animation: fade; animation_speed:1000; timer:true; timer_speed:4000; navigation_arrows:true; bullets:false; slide_number:false;">
+			<?php endif; ?>
 				<?php while ($slider_query->have_posts()) : $slider_query->the_post(); ?>
 					<li>
 						<img src="<?php echo get_post_meta($post->ID, 'ecpt_slideimage', true); ?>" class="no-gutter" alt="<?php echo the_title(); ?>"/>

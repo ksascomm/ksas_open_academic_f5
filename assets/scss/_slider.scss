@@ -122,3 +122,7 @@ div.orbit img.fluid-placeholder {
 .orbit-container .orbit-slides-container>* .orbit-caption {
 background-color: transparent;
 }
+
+.orbit-container a.orbit-prev:hover, .orbit-container a.orbit-next:hover {
+background-color: rgba(0, 0, 0, .5);
+}
