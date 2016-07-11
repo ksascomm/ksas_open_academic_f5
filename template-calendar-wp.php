@@ -28,7 +28,7 @@ Template Name: Calendar - WP Plugin
 				 $cal_cats_mobile = get_post_meta($post->ID, 'cal_cats', true);
 				fse_print_events($args = array(
 					"groupby" => FSE_GROUPBY_DAY,
-					"template" => "<a href='{event_url}' class='black'><article><h6>{event_startdate} {event_starttime}{event_endtime; before=-;  }{event_allday text=All Day}</h6><b><span class='blue'>{event_subject}</span></b><br><b>Type:</b> {event_categories}<br><b>Location: </b>{event_location}</article></a>", 
+					"template" => "<a href='{event_url}' class='black'><article><h6>{event_startdate} {event_starttime}{event_endtime; before=-;  }{event_allday text=All Day}</h6><strong><span class='blue'>{event_subject}</span></strong><br><strong>Type:</strong> {event_categories}<br><strong>Location: </strong>{event_location}</article></a>", 
 					"alwaysshowenddate" => "false",
 					"categories" => $cal_cats_mobile, 
 					"datefrom" => "today"));

@@ -13,9 +13,9 @@ foreach($google->find('tr.gsc_a_tr') as $article) {
     $item['year']   = $article->find('td.gsc_a_y', 0)->plaintext;
     
     ?>
-    <p class="pub"><b><a href="http://scholar.google.com<?php echo $item['link'];?>"><?php echo $item['title']; ?></a></b></p>
+    <p class="pub"><strong><a href="http://scholar.google.com<?php echo $item['link'];?>"><?php echo $item['title']; ?></a></strong></p>
     <h6 class="pub"><?php echo $item['year']; ?>, <?php echo $item['pub']; ?></h6>
     
     
     <?php } ?>
-<p align="right"><b><a href="<?php echo $older_pubs; ?>">View Older Publications</a></b></p>
+<p align="right"><strong><a href="<?php echo $older_pubs; ?>">View Older Publications</a></strong></p>

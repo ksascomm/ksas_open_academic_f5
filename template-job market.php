@@ -63,10 +63,10 @@ if ( false === ( $job_market_query = get_transient( 'job_market_query' ) ) ) {
 										<a href="<?php echo get_post_meta($post->ID, 'ecpt_website', true); ?>" target="_blank"><span class="icon-globe">Personal Website</a></span>
 								<?php endif; ?>
 							</p>
-							<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><b>Research Interests:&nbsp;</b><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
-							<p><?php if ( get_post_meta($post->ID, 'ecpt_thesis', true) ) : ?><b>Thesis Title: </b>"<?php echo get_post_meta($post->ID, 'ecpt_thesis', true); ?>"<?php endif; ?><?php if ( get_post_meta($post->ID, 'ecpt_job_abstract', true) ) : ?>&nbsp;- <a href="<?php echo get_post_meta($post->ID, 'ecpt_job_abstract', true); ?>">Download Abstract (PDF)</a><?php endif; ?></p>
-							<?php if ( get_post_meta($post->ID, 'ecpt_advisor', true) ) : ?><p><b>Main Advisor: </b><?php echo get_post_meta($post->ID, 'ecpt_advisor', true); ?></p><?php endif; ?>
-							<?php if ( get_post_meta($post->ID, 'ecpt_fields', true) ) : ?><p><b>Fields: </b><?php echo get_post_meta($post->ID, 'ecpt_fields', true); ?></p><?php endif; ?>
+							<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><strong>Research Interests:&nbsp;</strong><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
+							<p><?php if ( get_post_meta($post->ID, 'ecpt_thesis', true) ) : ?><strong>Thesis Title: </strong>"<?php echo get_post_meta($post->ID, 'ecpt_thesis', true); ?>"<?php endif; ?><?php if ( get_post_meta($post->ID, 'ecpt_job_abstract', true) ) : ?>&nbsp;- <a href="<?php echo get_post_meta($post->ID, 'ecpt_job_abstract', true); ?>">Download Abstract (PDF)</a><?php endif; ?></p>
+							<?php if ( get_post_meta($post->ID, 'ecpt_advisor', true) ) : ?><p><strong>Main Advisor: </strong><?php echo get_post_meta($post->ID, 'ecpt_advisor', true); ?></p><?php endif; ?>
+							<?php if ( get_post_meta($post->ID, 'ecpt_fields', true) ) : ?><p><strong>Fields: </strong><?php echo get_post_meta($post->ID, 'ecpt_fields', true); ?></p><?php endif; ?>
 							
 							</div>
 					</li>
