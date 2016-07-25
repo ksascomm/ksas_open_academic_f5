@@ -287,3 +287,20 @@ table.fc-header {
 a.button:hover {
   color: $black;
 }
+
+footer.timely.ai1ec-event-footer {
+    background: inherit;
+}
+
+.timely p {
+  font-size: 16px;
+  font-family: $font-stack !important;
+}
+
+.ai1ec-event-time, span.ai1ec-event-title, .ai1ec-event-details {
+  font-family: $font-subhead !important;
+}
+
+span.ai1ec-event-title {
+  font-size: 1.1rem !important;
+}

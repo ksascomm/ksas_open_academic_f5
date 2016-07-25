@@ -8587,6 +8587,19 @@ table.fc-header {
 a.button:hover {
   color: #2c2c33; }
 
+footer.timely.ai1ec-event-footer {
+  background: inherit; }
+
+.timely p {
+  font-size: 16px;
+  font-family: "gentona-light", Arial, sans-serif !important; }
+
+.ai1ec-event-time, span.ai1ec-event-title, .ai1ec-event-details {
+  font-family: "gentona-book", Arial, sans-serif !important; }
+
+span.ai1ec-event-title {
+  font-size: 1.1rem !important; }
+
 /**************DIRECTORY AND BIO PAGES****************/
 #fields_search fieldset {
   background: #CCC;
