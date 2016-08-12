@@ -8597,11 +8597,15 @@ footer.timely.ai1ec-event-footer {
 .ai1ec-event-time, span.ai1ec-event-title, .ai1ec-event-details {
   font-family: "gentona-book", Arial, sans-serif !important; }
 
-span.ai1ec-event-title {
-  font-size: 1.1rem !important; }
+.ai1ec-agenda-widget-view .ai1ec-date, .ai1ec-agenda-widget-view .ai1ec-date.ai1ec-today {
+  background: none !important; }
 
-.ai1ec-cost.ai1ec-row {
-  display: none; }
+.ai1ec-agenda-view .ai1ec-date.ai1ec-today {
+  border-top: none !important;
+  background: none !important; }
+
+.timely {
+  font-family: inherit !important; }
 
 /**************DIRECTORY AND BIO PAGES****************/
 #fields_search fieldset {
