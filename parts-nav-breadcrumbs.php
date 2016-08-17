@@ -15,8 +15,17 @@
 				<li><a href="<?php echo $article_link; ?>"><?php echo $article_title; ?></a></li>
 			</ul>
 		</nav>	<?php } 
-		
-	elseif ( $theme_option['flagship_sub_breadcrumbs']  == '1' ) { 
+	elseif (is_singular('ai1ec_event')) { ?>
+		<nav aria-label="breadcrumbs">
+			<ul id="menu-main-menu-2" class="breadcrumbs">
+				<li><a href="<?php echo $home_url; ?>">Home</a></li>
+				<li><a href="<?php echo $home_url; ?>/about/events-calendar">Events</a></li>
+				<li><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></li>
+			</ul>
+		</nav>
+		<?php }	
+
+	elseif ( $theme_option['flags3hip_sub_breadcrumbs']  == '1' ) { 
 	wp_nav_menu( array( 
 				'container' => 'nav',
 				'container_class' => 'offset-topgutter hide-for-print',
