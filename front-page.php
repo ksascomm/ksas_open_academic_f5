@@ -27,7 +27,7 @@
 					
 				<div class="row">		
 					<article class="small-12 columns news-item">
-						<h2 class="uppercase black"><?php the_date(); ?></h2>
+						<h2 class="uppercase black"><?php the_time( get_option( 'date_format' ) ); ?></h2>
 						<h1>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title();?>
