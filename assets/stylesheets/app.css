@@ -8847,7 +8847,7 @@ p {
   box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
   margin-right: 10px; }
 
-#widget img {
+.widget img {
   border: solid #f1f1f1 5px;
   box-shadow: -3px 3px 5px rgba(50, 50, 50, 0.5);
   margin-right: 10px;
@@ -9846,10 +9846,10 @@ ul.nav ul.sub-menu {
   font-style: normal;
   color: #005eb8; }
 
-#widget article {
+.widget article {
   margin: 0 20px 40px; }
 
-#widget a p {
+.widget a p {
   color: #2c2c33; }
 
 .label.round {
