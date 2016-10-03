@@ -6,9 +6,9 @@ Template Name: Profiles - Spotlights
 
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
+<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter" role="main">	
 		<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-		<section class="content">
+		<div class="content">
  			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> <!--Start the loop -->
 				<h1><?php the_title(); ?>&nbsp;</h1>
 				<?php the_content() ?>
@@ -38,7 +38,7 @@ Template Name: Profiles - Spotlights
 		<div class="row">
 			<?php flagship_pagination($ksas_profile_spotlight_query->max_num_pages); ?>		
 		</div>	
-		</section>
+		</div>
 	</div>	<!-- End main content (left) section -->
 <?php locate_template('parts-sidebar-nav.php', true, false); ?>
 </div> <!-- End #landing -->

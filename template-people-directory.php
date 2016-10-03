@@ -58,17 +58,17 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 ?>
 <?php get_header(); ?>
 <div class="row sidebar_bg radius10" id="page">
-<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter">	
+<div class="small-12 large-9 large-push-3 columns wrapper radius-left offset-topgutter" role="main">	
 	<?php locate_template('parts-nav-breadcrumbs.php', true, false); ?>	
-	<section class="row">
+	<div class="row">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<h1><?php the_title();?></h1>
 		<?php endwhile; endif; ?>
 		<?php $theme_option = flagship_sub_get_global_options();
 				if ( $theme_option['flagship_sub_directory_search']  == '1' ) { locate_template('parts-directory-search.php', true); } ?>
-	</section>
+	</div>
 	
-	<section class="row content" id="fields_container">
+	<div class="row content" id="fields_container">
 		<ul class="large-12 columns" id="directory">
 		<?php if($faculty_people_query->have_posts()) : ?>
 		<a name="faculty" id="faculty"></a>
@@ -155,7 +155,7 @@ if ( false === ( $staff_people_query = get_transient( 'staff_people_query' ) ) )
 	</div>
 	<?php } ?>
 </ul>
-</section>
+</div>
 
 		<?php if($emeriti_people_query->have_posts()) : ?>
 		<a name="emeriti" id="emeriti"></a>
