@@ -8373,7 +8373,7 @@ th.hide-for-touch {
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
   margin-bottom: 1rem; }
 
-SEClear {
+.SEClear, #SEClear {
   float: left; }
 
 #SECalendarListWrapper {
