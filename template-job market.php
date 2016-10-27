@@ -59,8 +59,11 @@ if ( false === ( $job_market_query = get_transient( 'job_market_query' ) ) ) {
 								<?php if ( get_post_meta($post->ID, 'ecpt_office', true) ) : ?>
 									<span class="icon-location"><?php echo get_post_meta($post->ID, 'ecpt_office', true); ?></span>
 								<?php endif; ?>
+						    	<?php if ( get_post_meta($post->ID, 'ecpt_cv', true) ) : ?>
+						    		<span class="icon-file-pdf"><a href="<?php echo get_post_meta($post->ID, 'ecpt_cv', true); ?>">Curriculum Vitae</a></span>
+						    	<?php endif; ?>
 								<?php if ( get_post_meta($post->ID, 'ecpt_website', true) ) : ?>
-										<a href="<?php echo get_post_meta($post->ID, 'ecpt_website', true); ?>" target="_blank"><span class="icon-globe">Personal Website</a></span>
+									<span class="icon-globe"><a href="<?php echo get_post_meta($post->ID, 'ecpt_website', true); ?>" target="_blank">Personal Website</a></span>
 								<?php endif; ?>
 							</p>
 							<?php if ( get_post_meta($post->ID, 'ecpt_expertise', true) ) : ?><p><strong>Research Interests:&nbsp;</strong><?php echo get_post_meta($post->ID, 'ecpt_expertise', true); ?></p><?php endif; ?>
